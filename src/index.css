@@ -60,7 +60,6 @@ html,
 body {
   min-height: 100dvh;
   overflow-x: hidden;
-  overscroll-behavior-y: none;
 }
 
 body {
