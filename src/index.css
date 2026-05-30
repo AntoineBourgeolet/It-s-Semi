@@ -56,6 +56,11 @@
   }
 }
 
+html,
+body {
+  min-height: 100dvh;
+}
+
 body {
   @apply bg-[#FFF9E1] text-[#2D3436] font-sans antialiased overflow-x-hidden;
 }

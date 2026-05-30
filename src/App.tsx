@@ -869,6 +869,13 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' });
   }, [view]);
 
@@ -1189,7 +1196,7 @@ export default function App() {
 
   if (!biome) {
     return (
-      <div className="min-h-screen flex items-center justify-center p-4 bg-[#FCFAEF] overflow-hidden">
+      <div className="min-h-dvh flex items-center justify-center p-4 bg-[#FCFAEF] overflow-hidden">
         <div className="max-w-md w-full py-2">
            <motion.div 
              initial={{ y: -50, opacity: 0 }}
@@ -1301,7 +1308,7 @@ export default function App() {
   const repotToday = currentClimate ? cropsFilteredByCategory.filter(c => c.schedule[currentClimate].repot.includes(currentMonthIndex)) : [];
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FCFAEF]">
+    <div className="min-h-dvh flex flex-col bg-[#FCFAEF]">
       {/* Top Navbar */}
       <nav 
         className={`bg-white z-40 flex items-center justify-between gap-2 sm:gap-4 sticky sm:relative top-0 border-b-4 border-[#2D3436] p-2 px-3 sm:border-4 sm:shadow-[8px_8px_0_#FFD93D] sm:m-6 sm:rounded-3xl sm:p-4 sm:px-6 transition-shadow duration-300 ${
@@ -1815,9 +1822,9 @@ export default function App() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
-              className="max-w-7xl mx-auto w-full px-2 sm:px-0 flex-1 flex flex-col min-h-0"
+              className="max-w-7xl mx-auto w-full px-2 sm:px-0 md:flex-1 md:flex md:flex-col md:min-h-0"
             >
-              <div className="card-cartoon bg-white flex flex-col flex-1 overflow-hidden min-h-0 md:h-[calc(100dvh-250px)] lg:h-[calc(100dvh-210px)]">
+              <div className="card-cartoon bg-white flex flex-col md:flex-1 md:overflow-hidden md:min-h-0 md:h-[calc(100dvh-250px)] lg:h-[calc(100dvh-210px)]">
                  <div className="p-3 sm:p-6 border-b-4 border-[#2D3436] bg-[#F5F5F5] space-y-3 sm:space-y-4 z-20">
                                {/* Mobile: Simple title and legend */}
                      <div className="flex flex-col gap-3 md:hidden">
