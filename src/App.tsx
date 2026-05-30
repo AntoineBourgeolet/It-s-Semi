@@ -79,6 +79,20 @@ export default function App() {
       window.history.scrollRestoration = 'manual';
     }
     window.scrollTo(0, 0);
+
+    const handleLoad = () => {
+      window.scrollTo(0, 0);
+    };
+    window.addEventListener('load', handleLoad);
+
+    const timer1 = setTimeout(() => window.scrollTo(0, 0), 100);
+    const timer2 = setTimeout(() => window.scrollTo(0, 0), 300);
+
+    return () => {
+      window.removeEventListener('load', handleLoad);
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+    };
   }, []);
 
   useEffect(() => {
