@@ -1,0 +1,66 @@
+{
+  "packageId": "app.run.europe_west1.it_s_semi_120888622943.twa",
+  "host": "antoinebourgeolet.github.io",
+  "name": "It's Semi",
+  "launcherName": "It's Semi",
+  "display": "standalone",
+  "themeColor": "#FCFAEF",
+  "themeColorDark": "#000000",
+  "navigationColor": "#000000",
+  "navigationColorDark": "#000000",
+  "navigationDividerColor": "#000000",
+  "navigationDividerColorDark": "#000000",
+  "backgroundColor": "#FCFAEF",
+  "enableNotifications": true,
+  "startUrl": "/It-s-Semi/",
+  "iconUrl": "https://antoinebourgeolet.github.io/It-s-Semi/pwa-512x512.png",
+  "maskableIconUrl": "https://antoinebourgeolet.github.io/It-s-Semi/pwa-512x512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "c:\\Users\\Antoine\\Documents\\It-s-Semi\\TWA\\android.keystore",
+    "alias": "android"
+  },
+  "appVersionName": "6",
+  "appVersionCode": 6,
+  "shortcuts": [
+    {
+      "name": "À semer ce mois-ci",
+      "shortName": "À semer",
+      "url": "https://antoinebourgeolet.github.io/It-s-Semi/semis",
+      "chosenIconUrl": "https://antoinebourgeolet.github.io/It-s-Semi/pwa-192x192.png"
+    },
+    {
+      "name": "À repiquer",
+      "shortName": "À repiquer",
+      "url": "https://antoinebourgeolet.github.io/It-s-Semi/repiquage",
+      "chosenIconUrl": "https://antoinebourgeolet.github.io/It-s-Semi/pwa-192x192.png"
+    },
+    {
+      "name": "Alertes Météo",
+      "shortName": "Alertes",
+      "url": "https://antoinebourgeolet.github.io/It-s-Semi/meteo",
+      "chosenIconUrl": "https://antoinebourgeolet.github.io/It-s-Semi/pwa-192x192.png"
+    }
+  ],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://antoinebourgeolet.github.io/It-s-Semi/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://antoinebourgeolet.github.io/It-s-Semi/",
+  "minSdkVersion": 21,
+  "orientation": "default",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "protocolHandlers": [],
+  "fileHandlers": [],
+  "launchHandlerClientMode": "",
+  "displayOverride": [],
+  "appVersion": "6"
+}
