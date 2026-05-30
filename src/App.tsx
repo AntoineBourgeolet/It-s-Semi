@@ -1266,7 +1266,7 @@ export default function App() {
                               initial={{ opacity: 0, scale: 0.95 }}
                               animate={{ opacity: 1, scale: 1 }}
                               exit={{ opacity: 0, scale: 0.95 }}
-                              className="absolute z-50 left-0 right-0 bottom-full mb-2 sm:top-full sm:mt-2 bg-white border-[3px] sm:border-4 border-[#2D3436] rounded-xl sm:rounded-2xl shadow-[4px_4px_0_#2D3436] overflow-hidden max-h-48 overflow-y-auto"
+                              className="absolute z-50 left-0 right-0 bottom-full mb-2 sm:bottom-auto sm:mb-0 sm:top-full sm:mt-2 bg-white border-[3px] sm:border-4 border-[#2D3436] rounded-xl sm:rounded-2xl shadow-[4px_4px_0_#2D3436] overflow-hidden max-h-48 overflow-y-auto"
                             >
                               {citySuggestions.map((cInfo) => (
                                 <button
