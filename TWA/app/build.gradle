@@ -57,8 +57,8 @@ android {
         applicationId "app.run.europe_west1.it_s_semi_120888622943.twa"
         minSdkVersion 21
         targetSdkVersion 35
-        versionCode 8
-        versionName "8"
+        versionCode 11
+        versionName "11"
 
         // The name for the application
         resValue "string", "appName", twaManifest.name
