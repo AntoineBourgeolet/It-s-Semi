@@ -2284,7 +2284,7 @@ export default function App() {
       </main>
 
       <footer className="text-center pb-24 sm:pb-8 pt-4">
-        <a href="/privacy" className="text-xs font-bold text-gray-500 hover:text-[#2D3436] underline decoration-2 underline-offset-2 transition-colors">
+        <a href={`${import.meta.env.BASE_URL}privacy`} className="text-xs font-bold text-gray-500 hover:text-[#2D3436] underline decoration-2 underline-offset-2 transition-colors">
           Règles de confidentialité
         </a>
       </footer>

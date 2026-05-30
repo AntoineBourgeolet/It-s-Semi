@@ -94,7 +94,7 @@ export default defineConfig(({ mode }) => {
               name: "À semer ce mois-ci",
               short_name: "À semer",
               description: "Découvrez les variétés à semer durant ce mois",
-              url: "/semis",
+              url: "semis",
               icons: [
                 {
                   src: "pwa-192x192.png",
@@ -108,7 +108,7 @@ export default defineConfig(({ mode }) => {
               short_name: "À repiquer",
               description:
                 "Découvrez les jeunes plants à mettre en pleine terre",
-              url: "/repiquage",
+              url: "repiquage",
               icons: [
                 {
                   src: "pwa-192x192.png",
@@ -122,7 +122,7 @@ export default defineConfig(({ mode }) => {
               short_name: "Alertes",
               description:
                 "Consultez les risques météorologiques pour votre potager",
-              url: "/meteo",
+              url: "meteo",
               icons: [
                 {
                   src: "pwa-192x192.png",

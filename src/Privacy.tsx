@@ -27,7 +27,7 @@ export function PrivacyPolicy() {
           </p>
         </div>
         <div className="mt-8">
-          <a href="/" className="inline-block px-6 py-3 bg-[#FFD93D] rounded-xl font-bold text-[#2D3436] border-4 border-[#2D3436] shadow-[4px_4px_0_#2D3436] hover:translate-y-1 hover:shadow-none transition-all">
+          <a href={import.meta.env.BASE_URL} className="inline-block px-6 py-3 bg-[#FFD93D] rounded-xl font-bold text-[#2D3436] border-4 border-[#2D3436] shadow-[4px_4px_0_#2D3436] hover:translate-y-1 hover:shadow-none transition-all">
             Retour à l'accueil
           </a>
         </div>
