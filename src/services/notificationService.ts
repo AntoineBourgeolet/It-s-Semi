@@ -40,7 +40,9 @@ export async function showLocalNotification(title: string, body: string, options
   // If service worker registration is available, prefer using registration.showNotification for robust PWA behavior
   if ('serviceWorker' in navigator) {
     try {
-      const registration = await navigator.serviceWorker.ready;
+      // Use getRegistration() instead of ready to prevent hanging forever
+      // if the service worker is bypassed (e.g. on force-refresh) or not yet active.
+      const registration = await navigator.serviceWorker.getRegistration();
       if (registration && 'showNotification' in registration) {
         registration.showNotification(title, defaultOptions);
         return;
