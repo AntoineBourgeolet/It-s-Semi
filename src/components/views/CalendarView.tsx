@@ -38,9 +38,10 @@ export function CalendarView({
   return (
     <motion.div 
       key="calendar"
-      initial={{ opacity: 0, x: 20 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -20 }}
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -10 }}
+      transition={{ duration: 0.15 }}
       className="max-w-7xl mx-auto w-full px-2 sm:px-0 md:flex-1 md:flex md:flex-col md:min-h-0"
     >
       <div className="card-cartoon bg-white flex flex-col md:flex-1 md:overflow-hidden md:min-h-0 md:h-[calc(100dvh-250px)] lg:h-[calc(100dvh-210px)]">

@@ -409,7 +409,7 @@ export default function App() {
   const repotToday = currentClimate ? cropsFilteredByCategory.filter(c => c.schedule[currentClimate].repot.includes(currentMonthIndex)) : [];
 
   return (
-    <div className="min-h-dvh flex flex-col bg-[#FCFAEF]">
+    <div className="min-h-dvh flex flex-col bg-[#FCFAEF] overflow-x-hidden">
       <TopNavbar
         view={view}
         setView={setView}

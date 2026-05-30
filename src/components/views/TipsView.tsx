@@ -7,9 +7,10 @@ export function TipsView() {
   return (
     <motion.div 
       key="tips"
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -20 }}
+      exit={{ opacity: 0, y: -10 }}
+      transition={{ duration: 0.15 }}
       className="max-w-4xl mx-auto space-y-8"
     >
        <h2 className="text-3xl font-black flex items-center gap-3">
@@ -19,8 +20,8 @@ export function TipsView() {
        <div className="grid gap-6">
          {TIPS.map((tip, i) => (
            <motion.div 
-             initial={{ opacity: 0, x: -20 }}
-             animate={{ opacity: 1, x: 0, transition: { delay: i * 0.1 } }}
+             initial={{ opacity: 0, y: 10 }}
+             animate={{ opacity: 1, y: 0, transition: { delay: i * 0.1 } }}
              key={tip.title} 
              className="card-cartoon bg-white p-6 sm:p-8 flex gap-6 hover:-translate-y-1 transition-transform"
            >

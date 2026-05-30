@@ -40,9 +40,10 @@ export function MyGardenView({
   return (
     <motion.div 
       key="my-garden"
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 1.05 }}
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -10 }}
+      transition={{ duration: 0.15 }}
       className="max-w-6xl mx-auto space-y-8"
     >
       <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-4">
