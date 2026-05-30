@@ -1,0 +1,49 @@
+{
+  "name": "It's Semi - Potager Malin",
+  "short_name": "It's Semi",
+  "description": "Gerez votre potager sans prise de tete avec It's Semi",
+  "theme_color": "#FCFAEF",
+  "background_color": "#FCFAEF",
+  "display": "standalone",
+  "start_url": "/",
+  "id": "/",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "A semer ce mois-ci",
+      "short_name": "A semer",
+      "description": "Decouvrez les varietes a semer durant ce mois",
+      "url": "/semis"
+    },
+    {
+      "name": "A repiquer",
+      "short_name": "A repiquer",
+      "description": "Decouvrez les jeunes plants a mettre en pleine terre",
+      "url": "/repiquage"
+    },
+    {
+      "name": "Alertes Meteo",
+      "short_name": "Alertes",
+      "description": "Consultez les risques meteorologiques pour votre potager",
+      "url": "/meteo"
+    }
+  ]
+}

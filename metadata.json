@@ -1,0 +1,8 @@
+{
+  "name": "It's semi",
+  "description": "Une application de jardinage avec un style cartoon pour savoir quoi planter et récolter selon votre région métérologique en France.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

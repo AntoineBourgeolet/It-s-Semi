@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.itssemi.twa",
+      "sha256_cert_fingerprints": [
+        "C8:CF:38:F1:06:2E:55:63:42:C1:2A:F3:00:19:86:B2:43:85:AF:3B:4F:20:C5:FD:FB:2F:92:BB:58:49:8C:E4"
+      ]
+    }
+  }
+]
