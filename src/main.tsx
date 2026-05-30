@@ -5,7 +5,8 @@ import { PrivacyPolicy } from './Privacy.tsx';
 import './index.css';
 
 function Root() {
-  if (window.location.pathname === '/privacy') {
+  const path = window.location.pathname;
+  if (path === '/privacy' || path.endsWith('/privacy')) {
     return <PrivacyPolicy />;
   }
   return <App />;

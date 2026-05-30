@@ -913,13 +913,13 @@ export default function App() {
       const params = new URLSearchParams(window.location.search);
       const isShortcut = params.get('shortcut');
 
-      if (path === '/semis' || isShortcut === 'semis') {
+      if (path === '/semis' || path.endsWith('/semis') || isShortcut === 'semis') {
         setView('dashboard');
         setSelectedMonthAction('sow_any');
-      } else if (path === '/repiquage' || isShortcut === 'repiquage') {
+      } else if (path === '/repiquage' || path.endsWith('/repiquage') || isShortcut === 'repiquage') {
         setView('dashboard');
         setSelectedMonthAction('repot');
-      } else if (path === '/meteo' || isShortcut === 'meteo') {
+      } else if (path === '/meteo' || path.endsWith('/meteo') || isShortcut === 'meteo') {
         setView('my-garden');
       }
     };
